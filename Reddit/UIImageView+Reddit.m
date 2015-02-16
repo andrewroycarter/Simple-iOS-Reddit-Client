@@ -10,6 +10,12 @@
 
 #import <objc/runtime.h>
 
+@interface UIImageView ()
+
+@property (nonatomic, copy) NSString *imageTag;
+
+@end
+
 @implementation UIImageView (Reddit)
 
 #pragma mark - Class Methods
@@ -37,12 +43,13 @@
 
 - (void)setImageTag:(NSString *)tag
 {
-    objc_setAssociatedObject(self, @selector(imageTag), tag, OBJC_ASSOCIATION_ASSIGN);
+    objc_setAssociatedObject(self, @selector(imageTag), tag, OBJC_ASSOCIATION_COPY_NONATOMIC);
 }
 
 - (void)setImageWithURL:(NSURL *)url
 {
     UIImage *image = [[[self class] sharedImageCache] objectForKey:url];
+    [self setImageTag:[url absoluteString]];
     if (image)
     {
         [self setImage:image];
@@ -65,14 +72,8 @@
                     });
                 }
             }
-            [self setImageTag:nil];
-            
         }];
         [task resume];
-    }
-    else
-    {
-        [self setImageTag:nil];
     }
 }
 
