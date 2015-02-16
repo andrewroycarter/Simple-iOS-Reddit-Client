@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  UITableViewCell+Reddit.h
 //  Reddit
 //
 //  Created by Andrew Carter on 2/15/15.
@@ -8,8 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface UITableViewCell (Reddit)
 
++ (NSString *)reuseIdentifier;
 
 @end
-

@@ -1,17 +1,15 @@
 //
-//  AppDelegate.m
+//  UIImageView+Reddit.h
 //  Reddit
 //
 //  Created by Andrew Carter on 2/15/15.
 //  Copyright (c) 2015 WillowTree Apps. All rights reserved.
 //
 
-#import "AppDelegate.h"
+#import <UIKit/UIKit.h>
 
-@interface AppDelegate ()
+@interface UIImageView (Reddit)
 
-@end
-
-@implementation AppDelegate
+- (void)setImageWithURL:(NSURL *)url;
 
 @end

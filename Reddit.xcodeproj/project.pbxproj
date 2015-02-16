@@ -9,11 +9,18 @@
 /* Begin PBXBuildFile section */
 		229DE0371A917A3A00826F22 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 229DE0361A917A3A00826F22 /* main.m */; };
 		229DE03A1A917A3A00826F22 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 229DE0391A917A3A00826F22 /* AppDelegate.m */; };
-		229DE03D1A917A3A00826F22 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 229DE03C1A917A3A00826F22 /* ViewController.m */; };
 		229DE0401A917A3A00826F22 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 229DE03E1A917A3A00826F22 /* Main.storyboard */; };
 		229DE0421A917A3A00826F22 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 229DE0411A917A3A00826F22 /* Images.xcassets */; };
 		229DE0451A917A3A00826F22 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 229DE0431A917A3A00826F22 /* LaunchScreen.xib */; };
 		229DE0511A917A3A00826F22 /* RedditTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 229DE0501A917A3A00826F22 /* RedditTests.m */; };
+		229DE05E1A917B0600826F22 /* FrontPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 229DE05D1A917B0600826F22 /* FrontPageViewController.m */; };
+		229DE0621A9180BE00826F22 /* RedditAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 229DE0611A9180BE00826F22 /* RedditAPI.m */; };
+		229DE0661A91851800826F22 /* Post.m in Sources */ = {isa = PBXBuildFile; fileRef = 229DE0651A91851800826F22 /* Post.m */; };
+		22FF53BB1A9186480061B054 /* NSArray+Reddit.m in Sources */ = {isa = PBXBuildFile; fileRef = 22FF53BA1A9186480061B054 /* NSArray+Reddit.m */; };
+		22FF53BF1A918C8E0061B054 /* PostTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 22FF53BE1A918C8E0061B054 /* PostTableViewCell.m */; };
+		22FF53C21A918CB50061B054 /* UITableViewCell+Reddit.m in Sources */ = {isa = PBXBuildFile; fileRef = 22FF53C11A918CB50061B054 /* UITableViewCell+Reddit.m */; };
+		22FF53C81A9193BE0061B054 /* UIImageView+Reddit.m in Sources */ = {isa = PBXBuildFile; fileRef = 22FF53C71A9193BE0061B054 /* UIImageView+Reddit.m */; };
+		22FF53CC1A9197470061B054 /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22FF53CB1A9197470061B054 /* WebViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,14 +39,28 @@
 		229DE0361A917A3A00826F22 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		229DE0381A917A3A00826F22 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		229DE0391A917A3A00826F22 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		229DE03B1A917A3A00826F22 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		229DE03C1A917A3A00826F22 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		229DE03F1A917A3A00826F22 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		229DE0411A917A3A00826F22 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		229DE0441A917A3A00826F22 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		229DE04A1A917A3A00826F22 /* RedditTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RedditTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		229DE04F1A917A3A00826F22 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		229DE0501A917A3A00826F22 /* RedditTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RedditTests.m; sourceTree = "<group>"; };
+		229DE05C1A917B0600826F22 /* FrontPageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FrontPageViewController.h; sourceTree = "<group>"; };
+		229DE05D1A917B0600826F22 /* FrontPageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FrontPageViewController.m; sourceTree = "<group>"; };
+		229DE0601A9180BE00826F22 /* RedditAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RedditAPI.h; sourceTree = "<group>"; };
+		229DE0611A9180BE00826F22 /* RedditAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RedditAPI.m; sourceTree = "<group>"; };
+		229DE0641A91851800826F22 /* Post.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Post.h; sourceTree = "<group>"; };
+		229DE0651A91851800826F22 /* Post.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Post.m; sourceTree = "<group>"; };
+		22FF53B91A9186480061B054 /* NSArray+Reddit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Reddit.h"; sourceTree = "<group>"; };
+		22FF53BA1A9186480061B054 /* NSArray+Reddit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Reddit.m"; sourceTree = "<group>"; };
+		22FF53BD1A918C8E0061B054 /* PostTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PostTableViewCell.h; sourceTree = "<group>"; };
+		22FF53BE1A918C8E0061B054 /* PostTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PostTableViewCell.m; sourceTree = "<group>"; };
+		22FF53C01A918CB50061B054 /* UITableViewCell+Reddit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableViewCell+Reddit.h"; sourceTree = "<group>"; };
+		22FF53C11A918CB50061B054 /* UITableViewCell+Reddit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableViewCell+Reddit.m"; sourceTree = "<group>"; };
+		22FF53C61A9193BE0061B054 /* UIImageView+Reddit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+Reddit.h"; sourceTree = "<group>"; };
+		22FF53C71A9193BE0061B054 /* UIImageView+Reddit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+Reddit.m"; sourceTree = "<group>"; };
+		22FF53CA1A9197470061B054 /* WebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewController.h; sourceTree = "<group>"; };
+		22FF53CB1A9197470061B054 /* WebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,10 +102,13 @@
 		229DE0331A917A3A00826F22 /* Reddit */ = {
 			isa = PBXGroup;
 			children = (
-				229DE0381A917A3A00826F22 /* AppDelegate.h */,
-				229DE0391A917A3A00826F22 /* AppDelegate.m */,
-				229DE03B1A917A3A00826F22 /* ViewController.h */,
-				229DE03C1A917A3A00826F22 /* ViewController.m */,
+				22FF53C91A91971B0061B054 /* WebViewController */,
+				22FF53BC1A918C7E0061B054 /* PostTableViewCell */,
+				22FF53B81A9186230061B054 /* Categories */,
+				229DE0631A9184AD00826F22 /* Models */,
+				229DE05F1A9180AA00826F22 /* RedditAPI */,
+				229DE05B1A917AD300826F22 /* FrontPageViewController */,
+				229DE05A1A917A3D00826F22 /* AppDelegate */,
 				229DE03E1A917A3A00826F22 /* Main.storyboard */,
 				229DE0411A917A3A00826F22 /* Images.xcassets */,
 				229DE0431A917A3A00826F22 /* LaunchScreen.xib */,
@@ -117,6 +141,73 @@
 				229DE04F1A917A3A00826F22 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		229DE05A1A917A3D00826F22 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				229DE0381A917A3A00826F22 /* AppDelegate.h */,
+				229DE0391A917A3A00826F22 /* AppDelegate.m */,
+			);
+			name = AppDelegate;
+			sourceTree = "<group>";
+		};
+		229DE05B1A917AD300826F22 /* FrontPageViewController */ = {
+			isa = PBXGroup;
+			children = (
+				229DE05C1A917B0600826F22 /* FrontPageViewController.h */,
+				229DE05D1A917B0600826F22 /* FrontPageViewController.m */,
+			);
+			name = FrontPageViewController;
+			sourceTree = "<group>";
+		};
+		229DE05F1A9180AA00826F22 /* RedditAPI */ = {
+			isa = PBXGroup;
+			children = (
+				229DE0601A9180BE00826F22 /* RedditAPI.h */,
+				229DE0611A9180BE00826F22 /* RedditAPI.m */,
+			);
+			name = RedditAPI;
+			sourceTree = "<group>";
+		};
+		229DE0631A9184AD00826F22 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				229DE0641A91851800826F22 /* Post.h */,
+				229DE0651A91851800826F22 /* Post.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		22FF53B81A9186230061B054 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				22FF53B91A9186480061B054 /* NSArray+Reddit.h */,
+				22FF53BA1A9186480061B054 /* NSArray+Reddit.m */,
+				22FF53C01A918CB50061B054 /* UITableViewCell+Reddit.h */,
+				22FF53C11A918CB50061B054 /* UITableViewCell+Reddit.m */,
+				22FF53C61A9193BE0061B054 /* UIImageView+Reddit.h */,
+				22FF53C71A9193BE0061B054 /* UIImageView+Reddit.m */,
+			);
+			name = Categories;
+			sourceTree = "<group>";
+		};
+		22FF53BC1A918C7E0061B054 /* PostTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				22FF53BD1A918C8E0061B054 /* PostTableViewCell.h */,
+				22FF53BE1A918C8E0061B054 /* PostTableViewCell.m */,
+			);
+			name = PostTableViewCell;
+			sourceTree = "<group>";
+		};
+		22FF53C91A91971B0061B054 /* WebViewController */ = {
+			isa = PBXGroup;
+			children = (
+				22FF53CA1A9197470061B054 /* WebViewController.h */,
+				22FF53CB1A9197470061B054 /* WebViewController.m */,
+			);
+			name = WebViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -219,9 +310,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				229DE03D1A917A3A00826F22 /* ViewController.m in Sources */,
+				229DE0661A91851800826F22 /* Post.m in Sources */,
+				22FF53CC1A9197470061B054 /* WebViewController.m in Sources */,
+				229DE0621A9180BE00826F22 /* RedditAPI.m in Sources */,
+				22FF53BB1A9186480061B054 /* NSArray+Reddit.m in Sources */,
+				22FF53C21A918CB50061B054 /* UITableViewCell+Reddit.m in Sources */,
+				22FF53BF1A918C8E0061B054 /* PostTableViewCell.m in Sources */,
 				229DE03A1A917A3A00826F22 /* AppDelegate.m in Sources */,
 				229DE0371A917A3A00826F22 /* main.m in Sources */,
+				229DE05E1A917B0600826F22 /* FrontPageViewController.m in Sources */,
+				22FF53C81A9193BE0061B054 /* UIImageView+Reddit.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -412,6 +510,7 @@
 				229DE0561A917A3A00826F22 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		229DE0571A917A3A00826F22 /* Build configuration list for PBXNativeTarget "RedditTests" */ = {
 			isa = XCConfigurationList;
@@ -420,6 +519,7 @@
 				229DE0591A917A3A00826F22 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
