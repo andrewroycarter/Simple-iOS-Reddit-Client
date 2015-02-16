@@ -56,7 +56,6 @@
     }
     else if (url)
     {
-        [self setImageTag:[url absoluteString]];
         NSURLSessionTask *task = [[NSURLSession sharedSession] dataTaskWithURL:url completionHandler:^(NSData *data, NSURLResponse *response, NSError *error) {
             
             if ([[self imageTag] isEqualToString:[url absoluteString]])
