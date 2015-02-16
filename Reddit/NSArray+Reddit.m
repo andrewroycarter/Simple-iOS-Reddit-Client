@@ -18,10 +18,8 @@
     [self enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
        
         id transformedObj = block(obj);
-        if (transformedObj)
-        {
-            [result addObject:transformedObj];
-        }
+        NSAssert(transformedObj != nil, @"Map block must return an object");
+        [result addObject:transformedObj];
         
     }];
     return [NSArray arrayWithArray:result];
